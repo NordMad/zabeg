@@ -1,0 +1,38 @@
+.route {
+  padding: $block-indent 0;
+  text-align: center;
+  background-color: $bg-secondary-color;
+  background-image: url("../img/bg-route.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.route__caption {
+  margin-bottom: 24px;
+  font-family: $heading-font;
+  color: $text-light-color;
+  @include fontStyle($base-heading-size, $base-heading-height);
+  font-weight: $bold-weight;
+}
+
+.route__block {
+  position: relative;
+  width: 755px;
+  margin: 0 auto;
+}
+
+.route__text {
+  position: absolute;
+  width: 400px;
+  left: 180px;
+  bottom: 27px;
+  color: $text-light-color;
+  @include fontStyle(20px, 24px);
+  text-align: left;
+
+  & span {
+    display: block;
+    margin-bottom: 27px;
+  }
+}

@@ -1,0 +1,52 @@
+.partners {
+  padding: 75px 0;
+}
+
+.partners__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 0 auto 50px;
+}
+
+.partners__block {
+  width: 460px;
+}
+
+.partners__caption {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $caption-color;
+  @include fontStyle($base-caption-size, $base-caption-height);
+  font-weight: $bold-weight;
+  text-align: center;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: center;
+}
+
+.partners__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+
+  &:not(:last-child)::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $dark-gray;
+    right: 0;
+  }
+}
+
+.partners__phone {
+  text-align: center;
+}

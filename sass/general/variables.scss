@@ -6,17 +6,35 @@ $retina-dppx: 1.5dppx;
 $main-font: "PT Sans", "Arial", sans-serif;
 $heading-font: "PT Sans Narrow", "Arial", sans-serif;
 
+$content-width: 980px;
+$block-indent: 100px;
+$text-indent: 20px;
+
 $black: #333333;
 $white: #ffffff;
 $gray: #d9d9d9;
 $light-gray: #f4f4f4;
 $dark-gray: #cccccc;
+$dark-blue: #1073b7;
 $blue: #00aae7;
 $red: #e75125;
 
+$bg-page-color: $white;
+$bg-main-color: $light-gray;
+$bg-secondary-color: $blue;
+
+$banner-text-color: $white;
 $heading-color: $red;
 $caption-color: $blue;
 $text-color: $black;
+$text-light-color: $white;
+
+$shadow-color: rgba(#000000, 0.4);
+
+$button-color: $red;
+$button-border-radius: 30px;
+
+$input-border-radius: 3px;
 
 $base-heading-size: 45px;
 $base-heading-height: 38px;

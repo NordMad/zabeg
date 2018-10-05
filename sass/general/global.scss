@@ -4,6 +4,7 @@ body {
   color: $black;
   @include fontStyle($base-text-size, $base-text-height);
   font-weight: $regular-weight;
+  background-color: $bg-page-color;
 }
 
 *,
@@ -30,4 +31,9 @@ a {
 button {
   cursor: pointer;
   outline: none;
+}
+
+fieldset {
+  margin: 0;
+  border: none;
 }

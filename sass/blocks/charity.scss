@@ -1,0 +1,47 @@
+.charity {
+  padding: $block-indent 0;
+  text-align: center;
+  background-color: $bg-main-color;
+}
+
+.charity__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.charity__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: $text-indent;
+}
+
+.charity__item-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin-right: 20px;
+  font-family: $heading-font;
+  color: $text-light-color;
+  font-weight: $bold-weight;
+  letter-spacing: -2px;
+  background-color: $bg-secondary-color;
+  border-radius: 50%;
+
+  &--patch {
+    @include fontStyle(42px, 42px);
+  }
+  &--road {
+    @include fontStyle(35px, 35px);
+  }
+}
+
+.charity__item-text {
+  max-width: 350px;
+  font-size: 16px;
+  text-align: left;
+}

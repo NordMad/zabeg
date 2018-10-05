@@ -1,7 +1,7 @@
 {
-  "name": "nochlezhka",
+  "name": "zabeg",
   "version": "1.0.0",
-  "description": "nochlezhka",
+  "description": "zabeg",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "gulp": "^3.9.1",

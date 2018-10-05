@@ -1,0 +1,32 @@
+.footer {
+  background-color: $bg-main-color;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 52px 0 45px;
+}
+
+.footer__hashtags {
+  color: $heading-color;
+  font-family: $heading-font;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.footer__copyright {
+  padding: 15px 0;
+  color: $text-light-color;
+  text-align: center;
+  background-color: $bg-secondary-color;
+}

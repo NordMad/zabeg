@@ -1,0 +1,53 @@
+.categories {
+  padding: $block-indent 0;
+  background-color: $bg-secondary-color;
+}
+
+.categories__heading {
+  width: 510px;
+  margin: 0 auto 40px;
+  font-family: $heading-font;
+  color: $text-light-color;
+  @include fontStyle($base-heading-size, 45px);
+  font-weight: $bold-weight;
+  text-align: center;
+}
+
+.categories__table {
+  width: 660px;
+  margin: 0 auto;
+  @include fontStyle(18px, 35px);
+  text-align: center;
+  background-color: $bg-page-color;
+  border-collapse: collapse;
+  box-shadow: 7px 7px 0 $shadow-color;
+  border: 1px solid $bg-page-color;
+}
+
+.categories__table-row {
+  height: 99px;
+
+  &--colspan {
+    height: 50px;
+  }
+}
+
+.categories__table-head {
+  width: 170px;
+  padding-left: 40px;
+  color: $caption-color;
+  font-weight: $bold-weight;
+  text-align: left;
+}
+
+.categories__table-column3 {
+  width: 205px;
+  padding-right: 40px;
+  font-weight: $bold-weight;
+  text-align: right;
+}
+
+.categories__table tr,
+.categories__table td {
+  border: 1px solid $gray;
+}

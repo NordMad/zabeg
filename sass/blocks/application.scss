@@ -1,0 +1,155 @@
+.application {
+  padding: 70px 0 $block-indent;
+  background-color: $bg-main-color;
+}
+
+.application__form {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: $bg-page-color;
+}
+
+.application__responsible {
+  padding: 0 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $gray;
+}
+
+.application__block {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+
+  &:first-child {
+    margin-right: 15px;
+  }
+}
+
+.application__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &--participant {
+    width: 350px;
+    margin-right: 20px;
+  }
+  &--category {
+    width: 160px;
+    margin-right: 20px;
+  }
+  &--distance {
+    width: 170px;
+  }
+}
+
+.application__block .application__field:last-of-type {
+  margin-bottom: 10px;
+}
+
+.application__label {
+  margin-bottom: 5px;
+  color: $caption-color;
+  @include fontStyle(16px, 26px);
+  font-weight: $bold-weight;
+}
+
+.application__input {
+  font-family: inherit;
+  height: 45px;
+  padding: 6px 12px 7px;
+  color: $text-color;
+  @include fontStyle(18px, 30px);
+  border: 1px solid $gray;
+  border-radius: $input-border-radius;
+  box-shadow: inset 0 0 5px rgba($black, 0.25);
+
+  &--birthdate {
+    width: 160px;
+    padding: 5px 12px 6px;
+
+    &::-webkit-inner-spin-button {
+      display: none;
+      -webkit-appearance: none;
+    }
+    &::-webkit-calendar-picker-indicator {
+      color: transparent;
+      height: 25px;
+      width: 25px;
+      opacity: 1;
+      background-color: transparent;
+      background-image: url("../img/icon-date.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.application__notice {
+  display: block;
+  margin-bottom: 27px;
+  color: rgba($black,0.8);
+  @include fontStyle(14px, 18px);
+}
+
+.application__party {
+  margin-bottom: 23px;
+  padding: 0 10px;
+  border-bottom: 1px solid $gray;
+}
+
+.application__party-item {
+  display: flex;
+}
+
+.application__add-participant {
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: inherit;
+  color: $caption-color;
+  @include fontStyle(18px, 20px);
+  font-weight: $bold-weight;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed $caption-color;
+}
+
+.application__total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 0 10px;
+  @include fontStyle(24px, 26px);
+}
+
+.application__total-amount {
+  font-weight: $bold-weight;
+}
+
+.application__submit-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.application__submit {
+  background-color: $button-color;
+  width: 260px;
+  height: 60px;
+  padding: 12px 20px;
+  color: $text-light-color;
+  font-family: $heading-font;
+  @include fontStyle(26px, 36px);
+  font-weight: $bold-weight;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $button-border-radius;
+}
+
+.application__submit-notice {
+  display: block;
+}

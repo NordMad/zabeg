@@ -1,0 +1,65 @@
+.about {
+  padding: $block-indent 0;
+  background-color: $bg-main-color;
+}
+
+.about__picture {
+  margin-right: 40px;
+}
+
+.about__block {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.about__share-list {
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  height: 24px;
+}
+
+.about__share-item {
+  display: flex;
+  margin-right: 4px;
+  border-radius: 2px;
+
+  &--mark {
+    background-color: #ee1700;
+  }
+  &--vkontakte {
+    background-color: #4671a0;
+  }
+  &--facebook {
+    background-color: #3a589a;
+  }
+  &--odnoklassniki {
+    background-color: #ed721f;
+  }
+  &--moimir {
+    background-color: #008be5;
+  }
+
+  &--last-child {
+    margin-right: 0;
+  }
+}
+
+.about__share-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.about__share-count {
+  display: block;
+  width: 36px;
+  color: $white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+.intro-text {
+  &--past {
+    max-width: 820px;
+    margin: 0 auto 40px;
+  }
+  &--charity {
+    max-width: 665px;
+    margin: 0 auto 35px;
+  }
+  &--application {
+    max-width: 760px;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+}
+
+.intro-text__heading {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: $heading-font;
+  color: $heading-color;
+  @include fontStyle($base-heading-size, $base-heading-height);
+  font-weight: $bold-weight;
+}
+
+.intro-text__caption {
+  margin-bottom: $text-indent;
+  color: $caption-color;
+  @include fontStyle($base-caption-size, $base-caption-height);
+  font-weight: $bold-weight;
+}
+
+.intro-text__description {
+  margin-bottom: $text-indent;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

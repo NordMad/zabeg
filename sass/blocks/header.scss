@@ -1,0 +1,95 @@
+.header__menu {
+  background-color: rgba($white, 0.5);
+}
+
+.header__wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+
+  &--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  &--banner {
+    position: relative;
+    min-height: 470px;
+  }
+}
+
+.header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  font-family: $heading-font;
+  color: $heading-color;
+  @include fontStyle(18px, 30px);
+  font-weight: $bold-weight;
+}
+
+.header__banner {
+  position: relative;
+  padding-top: $block-indent;
+  font-family: $heading-font;
+  color: $banner-text-color;
+  font-weight: $bold-weight;
+  text-transform: uppercase;
+  background-color: $blue;
+  background-image: url("../img/bg-banner.jpg");
+  background-repeat: repeat;
+  background-position: left;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($dark-blue, 0.7);
+  }
+}
+
+.header__banner-call {
+  margin-bottom: 44px;
+  @include fontStyle(45px, 52px);
+  letter-spacing: 0.2px;
+  text-shadow: 5px 5px 0 $shadow-color;
+}
+
+.header__banner-question {
+  display: block;
+  margin-bottom: 21px;
+  font-size: 76px;
+  line-height: 58px;
+}
+
+.header__banner-button {
+  display: block;
+  background-color: $button-color;
+  width: 220px;
+  height: 60px;
+  padding: 10px 20px 14px;
+  @include fontStyle(26px, 36px);
+  text-align: center;
+  border: 2px solid $white;
+  border-radius: $button-border-radius;
+  box-shadow: 5px 5px 0 $shadow-color;
+}
+
+.header__banner-date {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  @include fontStyle(33px, 52px);
+  z-index: 1;
+}
+
+.header__banner-sneakers {
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  z-index: 1;
+}
