@@ -2,10 +2,15 @@
   padding: $block-indent 0;
   text-align: center;
   background-color: $bg-secondary-color;
-  background-image: url("../img/bg-route.png");
+  background-image: url("../img/bg-route-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-route-desktop@2x.png");
+    background-size: 1533px 1022px cover;
+  }
 }
 
 .route__caption {

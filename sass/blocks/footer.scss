@@ -24,6 +24,35 @@
   width: 160px;
 }
 
+.footer__social-link {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  &--vkontakte {
+    background-color: $vk-color;
+  }
+  &--facebook {
+    background-color: $fb-color;
+  }
+}
+
+.footer__social-logo {
+  position: absolute;
+
+  &--vkontakte {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &--facebook {
+    right: 8px;
+    bottom: 0;
+  }
+}
+
 .footer__copyright {
   padding: 15px 0;
   color: $text-light-color;

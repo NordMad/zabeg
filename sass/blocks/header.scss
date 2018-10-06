@@ -15,6 +15,7 @@
   &--banner {
     position: relative;
     min-height: 470px;
+    padding-top: $block-indent;
   }
 }
 
@@ -30,13 +31,12 @@
 
 .header__banner {
   position: relative;
-  padding-top: $block-indent;
   font-family: $heading-font;
   color: $banner-text-color;
   font-weight: $bold-weight;
   text-transform: uppercase;
   background-color: $blue;
-  background-image: url("../img/bg-banner.jpg");
+  background-image: url("../img/bg-banner-desktop@1x.jpg");
   background-repeat: repeat;
   background-position: left;
 
@@ -49,6 +49,11 @@
     bottom: 0;
     left: 0;
     background-color: rgba($dark-blue, 0.7);
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-banner-desktop@2x.jpg");
+    background-size: 156px 470px;
   }
 }
 
