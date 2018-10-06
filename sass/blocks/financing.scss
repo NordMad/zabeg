@@ -4,7 +4,7 @@
 }
 
 .financing__caption {
-  margin-bottom: 30px;
+  margin-bottom: 43px;
   font-family: $heading-font;
   color: $text-light-color;
   @include fontStyle($base-heading-size, $base-heading-height);
@@ -22,26 +22,28 @@
 .financing__item {
   width: 380px;
   min-height: 490px;
-  padding: 20px 20px 20px 30px;
+  padding: 20px 20px 20px 28px;
   background-color: $bg-page-color;
   box-shadow: 7px 7px 0 $shadow-color;
 }
 
-.financing__item--picture-block {
+.financing__item-picture-block {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 212px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-right: 10px;
+
+  &--bereginya {
+    padding-bottom: 16px;
+  }
 }
 
 .financing__item-caption {
   margin-bottom: $text-indent;
   color: $caption-color;
   @include fontStyle($base-caption-size, $base-caption-height);
-
-
 }
 
 .financing__item-description {

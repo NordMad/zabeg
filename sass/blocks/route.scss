@@ -14,7 +14,7 @@
 }
 
 .route__caption {
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   font-family: $heading-font;
   color: $text-light-color;
   @include fontStyle($base-heading-size, $base-heading-height);
@@ -30,14 +30,14 @@
 .route__text {
   position: absolute;
   width: 400px;
-  left: 180px;
-  bottom: 27px;
+  left: 182px;
+  bottom: 32px;
   color: $text-light-color;
   @include fontStyle(20px, 24px);
   text-align: left;
 
   & span {
     display: block;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 }

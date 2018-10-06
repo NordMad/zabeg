@@ -5,7 +5,7 @@
 
 .categories__heading {
   width: 510px;
-  margin: 0 auto 40px;
+  margin: -8px auto 34px;
   font-family: $heading-font;
   color: $text-light-color;
   @include fontStyle($base-heading-size, 45px);
@@ -16,7 +16,7 @@
 .categories__table {
   width: 660px;
   margin: 0 auto;
-  @include fontStyle(18px, 35px);
+  @include fontStyle(18px, 38px);
   text-align: center;
   background-color: $bg-page-color;
   border-collapse: collapse;
@@ -25,7 +25,7 @@
 }
 
 .categories__table-row {
-  height: 99px;
+  height: 100px;
 
   &--colspan {
     height: 50px;
@@ -34,7 +34,7 @@
 
 .categories__table-head {
   width: 170px;
-  padding-left: 40px;
+  padding-left: 39px;
   color: $caption-color;
   font-weight: $bold-weight;
   text-align: left;
@@ -42,7 +42,7 @@
 
 .categories__table-column3 {
   width: 205px;
-  padding-right: 40px;
+  padding-right: 39px;
   font-weight: $bold-weight;
   text-align: right;
 }

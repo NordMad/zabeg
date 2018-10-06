@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 21px 0 19px;
   }
   &--banner {
     position: relative;
@@ -22,7 +22,8 @@
 .header__navigation-list {
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  width: 448px;
+  margin-right: 18px;
   font-family: $heading-font;
   color: $heading-color;
   @include fontStyle(18px, 30px);
@@ -58,17 +59,18 @@
 }
 
 .header__banner-call {
-  margin-bottom: 44px;
+  margin-bottom: 41px;
   @include fontStyle(45px, 52px);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.6px;
   text-shadow: 5px 5px 0 $shadow-color;
 }
 
 .header__banner-question {
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-size: 76px;
-  line-height: 58px;
+  line-height: 52px;
+  letter-spacing: 1px;
 }
 
 .header__banner-button {
@@ -87,14 +89,15 @@
 .header__banner-date {
   position: absolute;
   left: 0;
-  bottom: 14px;
+  bottom: 15px;
   @include fontStyle(33px, 52px);
+  letter-spacing: 0.5px;
   z-index: 1;
 }
 
 .header__banner-sneakers {
   position: absolute;
-  right: -60px;
+  right: -59px;
   bottom: 0;
   z-index: 1;
 }

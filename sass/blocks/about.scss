@@ -9,7 +9,7 @@
 
 .about__block {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .about__share-list {
@@ -80,8 +80,8 @@
 .about__share-count {
   position: relative;
   display: block;
-  width: 36px;
-  color: $white;
+  padding: 0 7.5px;
+  color: $text-light-color;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
