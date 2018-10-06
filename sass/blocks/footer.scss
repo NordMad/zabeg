@@ -31,6 +31,9 @@
   height: 40px;
   border-radius: 10px;
 
+  &--instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
   &--vkontakte {
     background-color: $vk-color;
   }
@@ -41,15 +44,16 @@
 
 .footer__social-logo {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 
-  &--vkontakte {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
   &--facebook {
+    top: auto;
+    left: auto;
     right: 8px;
     bottom: 0;
+    transform: translateX(0) translateY(0);
   }
 }
 

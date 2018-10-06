@@ -43,6 +43,7 @@
     "ajv": "^6.5.2",
     "ajv-keywords": "^3.2.0",
     "browser-sync": "^2.24.6",
+    "date-input-polyfill": "^2.14.0",
     "del": "^3.0.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-rename": "^1.4.0",
