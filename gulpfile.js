@@ -76,7 +76,7 @@ gulp.task("copy", function () {
     "fonts/**/*.{woff,woff2}",
     "img/**",
     "css/**",
-    "js/script.js"
+    "js/**"
   ], {
     base: "."
   })
@@ -88,5 +88,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "style", "scripts", "copy", "html", "minify", done);
+  run("clean", "style", "copy", "html", "minify", done);
 })

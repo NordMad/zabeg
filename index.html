@@ -12,14 +12,14 @@
     <header class="header">
       <div class="header__menu">
         <div class="header__wrapper header__wrapper--menu">
-          <img class="header__logo" src="img/logo-run-desktop@1x.png" srcset="img/logo-run-desktop@2x.png 2x" width="325" height="60" alt="Логотип">
+          <img class="header__logo" src="img/logo-run-desktop@1x.png" srcset="img/logo-run-desktop@2x.png 2x" width="325" height="60" alt="Логотип" data-section="header__banner">
           <nav class="header__navigation">
             <ul class="header__navigation-list">
-              <li class="header__navigation-item"><a href="#">О&nbsp;забеге</a></li>
-              <li class="header__navigation-item"><a href="#">Как это было</a></li>
-              <li class="header__navigation-item"><a href="#">Программа забега</a></li>
-              <li class="header__navigation-item"><a href="#">Маршрут</a></li>
-              <li class="header__navigation-item"><a href="#">Участие</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--about" href="#" data-section="about">О&nbsp;забеге</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--past" href="#" data-section="past">Как это было</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--schedule" href="#" data-section="schedule">Программа забега</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--route" href="#" data-section="route">Маршрут</a></li>
+              <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--application" href="#" data-section="application">Участие</a></li>
             </ul>
           </nav>
         </div>
@@ -28,7 +28,7 @@
         <div class="header__wrapper header__wrapper--banner">
           <div class="header__banner-block">
             <p class="header__banner-call"><span class="header__banner-question">Пробежим?</span>За здоровье детей</p>
-            <a class="header__banner-button" href="#">Пробежим!</a>
+            <a class="header__banner-button" href="#" data-section="application">Пробежим!</a>
           </div>
           <p class="header__banner-date">3&nbsp;июня, стадион &laquo;юность&raquo;</p>
           <img class="header__banner-sneakers" src="img/pic-sneakers-desktop@1x.png" srcset="img/pic-sneakers-desktop@2x.png 2x" alt="Кроссовки">
@@ -287,47 +287,47 @@
               <ul class="application__participant-list">
                 <li class="application__participant-item application__participant-item--name">
                   <label class="application__label" for="participant-1">Участник &#8470;&nbsp;1</label>
-                  <input class="application__input" type="text" id="participant-1" name="participant" required>
+                  <input class="application__input" type="text" id="participant-1" name="participant-1" required>
                 </li>
                 <li class="application__participant-item application__participant-item--category">
                   <span class="application__label">Категория</span>
                   <ul class="application__select-list">
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="baby-1" value="baby" name="category-1">
                       <label class="application__select-label" for="baby-1">Малыши</label>
-                      <input class="application__select-radio" type="radio" id="baby-1" value="baby" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="child-1" value="child" name="category-1">
                       <label class="application__select-label" for="child-1">Дети</label>
-                      <input class="application__select-radio" type="radio" id="child-1" value="child" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="student-1" value="student" name="category-1">
                       <label class="application__select-label" for="student-1">Студенты</label>
-                      <input class="application__select-radio" type="radio" id="student-1" value="student" name="category">
                     </li>
-                    <li class="application__select-item application__select-item--checked">
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="adult-1" value="adult" name="category-1" checked>
                       <label class="application__select-label" for="adult-1">Взрослые</label>
-                      <input class="application__select-radio" type="radio" id="adult-1" value="adult" name="category" checked>
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="pensioner-1" value="pensioner" name="category-1">
                       <label class="application__select-label" for="pensioner-1">Пенсионеры</label>
-                      <input class="application__select-radio" type="radio" id="pensioner-1" value="pensioner" name="category">
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="fun-run-1">Fun Run</label>
-                      <input class="application__select-radio" type="radio" id="fun-run-1" value="fun-run" name="category">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="fun-1" value="fun" name="category-1">
+                      <label class="application__select-label" for="fun-1">Fun Run</label>
                     </li>
                   </ul>
                 </li>
-                <li class="application__participant-item application__participant-item--distance">
+                <li class="application__participant-item application__participant-item--distance" data-price="350руб">
                   <span class="application__label">Дистанция</span>
                   <ul class="application__select-list">
-                    <li class="application__select-item application__select-item--checked">
-                      <label class="application__select-label" for="2km-1">2&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="2km-1" value="2" name="distance" checked>
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="two-1" value="2" name="distance-1" checked>
+                      <label class="application__select-label" for="two-1">2&nbsp;км</label>
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="10km-1">10&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="10km-1" value="10" name="distance">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="ten-1" value="10" name="distance-1">
+                      <label class="application__select-label" for="ten-1">10&nbsp;км</label>
                     </li>
                   </ul>
                 </li>
@@ -337,47 +337,47 @@
               <ul class="application__participant-list">
                 <li class="application__participant-item application__participant-item--name">
                   <label class="application__label" for="participant-2">Участник &#8470;&nbsp;2</label>
-                  <input class="application__input" type="text" id="participant-2" name="participant" required>
+                  <input class="application__input" type="text" id="participant-2" name="participant-2" required>
                 </li>
                 <li class="application__participant-item application__participant-item--category">
                   <span class="application__label">Категория</span>
                   <ul class="application__select-list">
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="baby-2" value="baby" name="category-2">
                       <label class="application__select-label" for="baby-2">Малыши</label>
-                      <input class="application__select-radio" type="radio" id="baby-2" value="baby" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="child-2" value="child" name="category-2">
                       <label class="application__select-label" for="child-2">Дети</label>
-                      <input class="application__select-radio" type="radio" id="child-2" value="child" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="student-2" value="student" name="category-2">
                       <label class="application__select-label" for="student-2">Студенты</label>
-                      <input class="application__select-radio" type="radio" id="student-2" value="student" name="category">
                     </li>
-                    <li class="application__select-item application__select-item--checked">
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="adult-2" value="adult" name="category-2" checked>
                       <label class="application__select-label" for="adult-2">Взрослые</label>
-                      <input class="application__select-radio" type="radio" id="adult-2" value="adult" name="category" checked>
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="pensioner-2" value="pensioner" name="category-2">
                       <label class="application__select-label" for="pensioner-2">Пенсионеры</label>
-                      <input class="application__select-radio" type="radio" id="pensioner-2" value="pensioner" name="category">
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="fun-run-2">Fun Run</label>
-                      <input class="application__select-radio" type="radio" id="fun-run-2" value="fun-run" name="category">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="fun-2" value="fun" name="category-2">
+                      <label class="application__select-label" for="fun-2">Fun Run</label>
                     </li>
                   </ul>
                 </li>
-                <li class="application__participant-item application__participant-item--distance">
+                <li class="application__participant-item application__participant-item--distance" data-price="350руб">
                   <span class="application__label">Дистанция</span>
                   <ul class="application__select-list">
-                    <li class="application__select-item application__select-item--checked">
-                      <label class="application__select-label" for="2km-2">2&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="2km-2" value="2" name="distance" checked>
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="two-2" value="2" name="distance-2" checked>
+                      <label class="application__select-label" for="two-2">2&nbsp;км</label>
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="10km-2">10&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="10km-2" value="10" name="distance">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="ten-2" value="10" name="distance-2">
+                      <label class="application__select-label" for="ten-2">10&nbsp;км</label>
                     </li>
                   </ul>
                 </li>
@@ -387,53 +387,56 @@
               <ul class="application__participant-list">
                 <li class="application__participant-item application__participant-item--name">
                   <label class="application__label" for="participant-3">Участник &#8470;&nbsp;3</label>
-                  <input class="application__input" type="text" id="participant-3" name="participant" required>
+                  <input class="application__input" type="text" id="participant-3" name="participant-3" required>
                 </li>
                 <li class="application__participant-item application__participant-item--category">
                   <span class="application__label">Категория</span>
-                  <ul class="application__select-list application__select-list--open">
+                  <ul class="application__select-list">
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="baby-3" value="baby" name="category-3">
                       <label class="application__select-label" for="baby-3">Малыши</label>
-                      <input class="application__select-radio" type="radio" id="baby-3" value="baby" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="child-3" value="child" name="category-3">
                       <label class="application__select-label" for="child-3">Дети</label>
-                      <input class="application__select-radio" type="radio" id="child-3" value="child" name="category">
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="student-3" value="student" name="category-3">
                       <label class="application__select-label" for="student-3">Студенты</label>
-                      <input class="application__select-radio" type="radio" id="student-3" value="student" name="category">
                     </li>
-                    <li class="application__select-item application__select-item--checked">
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="adult-3" value="adult" name="category-3" checked>
                       <label class="application__select-label" for="adult-3">Взрослые</label>
-                      <input class="application__select-radio" type="radio" id="adult-3" value="adult" name="category" checked>
                     </li>
                     <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="pensioner-3" value="pensioner" name="category-3">
                       <label class="application__select-label" for="pensioner-3">Пенсионеры</label>
-                      <input class="application__select-radio" type="radio" id="pensioner-3" value="pensioner" name="category">
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="fun-run-3">Fun Run</label>
-                      <input class="application__select-radio" type="radio" id="fun-run-3" value="fun-run" name="category">
+                      <input class="application__select-radio application__select-radio--category" type="radio" id="fun-3" value="fun" name="category-3">
+                      <label class="application__select-label" for="fun-3">Fun Run</label>
                     </li>
                   </ul>
                 </li>
-                <li class="application__participant-item application__participant-item--distance">
+                <li class="application__participant-item application__participant-item--distance" data-price="350руб">
                   <span class="application__label">Дистанция</span>
                   <ul class="application__select-list">
-                    <li class="application__select-item application__select-item--checked">
-                      <label class="application__select-label" for="2km">2&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="2km" value="2" name="distance" checked>
+                    <li class="application__select-item">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="two-3" value="2" name="distance-3" checked>
+                      <label class="application__select-label" for="two-3">2&nbsp;км</label>
                     </li>
                     <li class="application__select-item">
-                      <label class="application__select-label" for="10km">10&nbsp;км</label>
-                      <input class="application__select-radio" type="radio" id="10km" value="10" name="distance">
+                      <input class="application__select-radio application__select-radio--distance" type="radio" id="ten-3" value="10" name="distance-3">
+                      <label class="application__select-label" for="ten-3">10&nbsp;км</label>
                     </li>
                   </ul>
                 </li>
               </ul>
             </fieldset>
-            <button class="application__add-participant" type="button">Добавить участника</button>
+            <div class="application__buttons-block">
+              <button class="application__button application__button--add" type="button">Добавить участника</button>
+              <button class="application__button application__button--remove" type="button">Убрать участника</button>
+            </div>
           </div>
           <p class="application__total">
             <span class="application__total-text">Итоговая сумма благотворительного взноса:</span>
@@ -515,6 +518,60 @@
       </div>
       <p class="footer__copyright">&copy;&nbsp;2017 Благотворительный забег &laquo;На&nbsp;одном дыхании&raquo;</p>
     </footer>
+    <template>
+      <fieldset class="application__participant">
+        <ul class="application__participant-list">
+          <li class="application__participant-item application__participant-item--name">
+            <label class="application__label" for=""></label>
+            <input class="application__input" type="text" id="" name="" required>
+          </li>
+          <li class="application__participant-item application__participant-item--category">
+            <span class="application__label">Категория</span>
+            <ul class="application__select-list">
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="baby-1" value="baby" name="category-1">
+                <label class="application__select-label" for="baby-1">Малыши</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="child-1" value="child" name="category-1">
+                <label class="application__select-label" for="child-1">Дети</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="student-1" value="student" name="category-1">
+                <label class="application__select-label" for="student-1">Студенты</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="adult-1" value="adult" name="category-1" checked>
+                <label class="application__select-label" for="adult-1">Взрослые</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="pensioner-1" value="pensioner" name="category-1">
+                <label class="application__select-label" for="pensioner-1">Пенсионеры</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--category" type="radio" id="fun-1" value="fun" name="category-1">
+                <label class="application__select-label" for="fun-1">Fun Run</label>
+              </li>
+            </ul>
+          </li>
+          <li class="application__participant-item application__participant-item--distance" data-price="350руб">
+            <span class="application__label">Дистанция</span>
+            <ul class="application__select-list">
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--distance" type="radio" id="two-1" value="2" name="distance-1" checked>
+                <label class="application__select-label" for="two-1">2&nbsp;км</label>
+              </li>
+              <li class="application__select-item">
+                <input class="application__select-radio application__select-radio--distance" type="radio" id="ten-1" value="10" name="distance-1">
+                <label class="application__select-label" for="ten-1">10&nbsp;км</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </fieldset>
+    </template>
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/date-input-polyfill.dist.js"></script>
   </body>
 </html>

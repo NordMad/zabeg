@@ -1,5 +1,14 @@
+.header {
+  position: relative;
+  padding-top: 100px;
+}
+
 .header__menu {
-  background-color: rgba($white, 0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  z-index: 100;
 }
 
 .header__wrapper {
@@ -19,15 +28,30 @@
   }
 }
 
+.header__logo {
+  cursor: pointer;
+}
+
 .header__navigation-list {
   display: flex;
   justify-content: space-between;
   width: 448px;
   margin-right: 18px;
   font-family: $heading-font;
-  color: $heading-color;
   @include fontStyle(18px, 30px);
   font-weight: $bold-weight;
+}
+
+.header__navigation-link {
+  color: $heading-color;
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--active {
+    color: $caption-color;
+  }
 }
 
 .header__banner {
